@@ -1,0 +1,182 @@
+@font-face
+{
+    font-family: FZZZH;
+    src: url('fonts/方正正准黑简体.ttf');
+}
+@font-face
+{
+    font-family: FZZH;
+    src: url('fonts/FZZHJW.TTF');
+}
+@font-face
+{
+    font-family: calibri;
+    src: url('../fonts/calibri.ttf');
+}
+
+#text1c
+{
+    font-family:FZZZH;
+    font-size: 25px;
+    color: #37524B;
+    position:absolute;
+    left:124px;
+    top:120px;
+}
+.English
+{
+    font-family:calibri;
+    font-size: 4px;
+    line-height: 5px;
+    color: #37524B;
+    position:absolute;
+    left:124px;
+    top:80px;
+}
+/*超链接样式*/
+.index1
+{
+    font-family: FZZH;
+    color:#FFFFFF;
+    font-size:10px;
+    text-decoration: none;
+}
+a:hover
+{
+    text-shadow: 5px 5px 5px #000000;
+    font-size: 16px;
+}
+#center
+{
+    position: absolute;
+    width: 1080px;
+    height: 480px;
+    background-color: #F7F7F7;
+    top:72.5px;
+    left: 143px;
+    z-index: -1;
+}
+.text1
+{
+    font-family:FZZH;
+    font-size: 2vh;
+    line-height: 3vh;
+    position:absolute;
+    left:124px;
+    top:234px;
+    width: 400px;
+    text-overflow: clip;
+    /*首行缩进两字符*/
+    text-indent:2em;
+
+}
+.number
+{
+    font-family:calibri;
+    line-height: 5px;
+    font-size: 100px;
+    position:absolute;
+    left:300px;
+    bottom:250px;
+}
+
+.picture
+{
+    position:absolute;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:-1;
+}
+.picture1
+{
+    position:absolute;
+    width:105px;
+    bottom:0px;
+    right:315px;
+    z-index: 0;
+}
+.picture2
+{
+    position:absolute;
+    width:105px;
+    bottom:0px;
+    right:210px;
+    z-index: 0;
+}
+.picture3
+{
+    position:absolute;
+    width:105px;
+    bottom:0px;
+    right:105px;
+    z-index: 0;
+}
+.picture4
+{
+    position:absolute;
+    width:105px;
+    bottom:0px;
+    right:0px;
+    z-index: 0;
+}
+
+.divhuang
+{
+    position:absolute;
+    font-family:calibri;
+    font-size:30px;
+    width:0px;
+    height:76px;
+    background-color:#F2BA14;
+    bottom:0px;
+    right:420px;
+    z-index: 1;
+}
+.divlv
+{
+    position:absolute;
+    width:0px;
+    height:76px;
+    background-color:#37524B;
+    bottom:0px;
+    right:0px;
+    opacity: 0.71;
+    z-index: 1;
+}
+.div1
+{
+    position:absolute;
+    bottom:42px;
+    left:50px;
+}
+.div2
+{
+    position:absolute;
+    bottom:42px;
+    left:130px;
+}
+.div3
+{
+    position:absolute;
+    bottom:42px;
+    left:210px;
+}
+.div4
+{
+    position:absolute;
+    bottom:42px;
+    left:290px;
+}
+.div5
+{
+    position:absolute;
+    bottom:18px;
+    left:50px;
+}
+.div6
+{
+    position:absolute;
+    bottom:18px;
+    left:130px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chapter1</title>
+    <link rel="stylesheet" href="../css/chapter_style.css" type="text/css"/>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".picture1 ").hide();
+            $(".picture2 ").hide();
+            $(".picture3 ").hide();
+            $(".picture4 ").hide();
+
+            $("#center").mousemove(function(){
+                $(".picture1").fadeIn();
+                $(".picture2").fadeIn("slow");
+                $(".picture3").fadeIn(1000);
+                $(".picture4").fadeIn(1500);
+                var div1=$(".divhuang");
+                div1.animate({width:'76px'},1500);
+                var div2=$(".divlv");
+                div2.animate({width:'420px'});
+            });
+
+        });
+    </script>
+</head>
+<body>
+<img class="picture" src="../001崇明网页素材/1C%20扉页-1.jpg" >
+<div id="center">
+
+
+        <div class="divhuang">
+            <p font-size="80px" align="center">01</p>
+        </div>
+        <div class="divlv">
+           <div class="div1"><a class="index1 " href="../html/map1.html">遥感全貌</a></div>
+            <div class="div2"><a class="index1 " href="../html/map1.html">行政区划</a></div>
+            <div class="div3"> <a class="index1 " href="../html/map1.html">交通网络</a></div>
+            <div class="div4"><a class="index1 " href="../html/map1.html">区位格局</a></div>
+            <div class="div5"><a class="index1 " href="../html/map1.html">国际比较</a></div>
+            <div class="div6"><a class="index1 " href="../html/map1.html">发展定位</a></div>
+
+        </div>
+    <div class="number ">
+        <p>01</p>
+    </div>
+    <p id="text1c">战略背景</p>
+    <div class="English ">
+        <p>Strategic background of</p>
+        <p>Chongming ecological island construction</p>
+    </div>
+    <div class="text1">
+        <p>新世纪以来，市委、市政府坚持从全市大局出发，以战略眼光推进崇明生态岛建设，坚持三岛联动，积极探索生态发展新模式，生态立岛理念深入人心，生态岛的基础和轮廓基本形成，经济社会发展取得长足进步，国内外影响力不断上升，为未来发展奠定了坚实基础。</p>
+    </div>
+    <img class="picture1" src="../001崇明网页素材/1C大图-1.jpg" >
+    <img class="picture2" src="../001崇明网页素材/1C大图-2.jpg" >
+    <img class="picture3" src="../001崇明网页素材/1C大图-3.jpg" >
+    <img class="picture4" src="../001崇明网页素材/1C大图-4.jpg" >
+
+</div>
+
+
+</body>
+</html>

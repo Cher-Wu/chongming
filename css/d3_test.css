@@ -1,0 +1,56 @@
+body
+{
+    font-family: Helvetica;
+}
+
+svg
+{
+    width: 500px;
+    height: 500px;
+}
+
+.top-label
+{
+    font-size: 13px;
+    font-style: italic;
+    text-transform: uppercase;
+    float: left;
+}
+/*　对象浮在左边*/
+/*text-transform 属性控制文本的大小写。*/
+/*none	默认。定义带有小写字母和大写字母的标准的文本。*/
+/*capitalize	文本中的每个单词以大写字母开头。*/
+/*uppercase	定义仅有大写字母。*/
+/*lowercase	定义无大写字母，仅有小写字母。*/
+/*inherit	规定应该从父元素继承 text-transform 属性的值。*/
+
+.age-label
+{
+    text-align: right;
+    font-weight: bold;
+    width: 90px;
+    padding-right: 10px;
+}
+
+.clearfix
+{
+    clear:both;
+}
+/*clear 属性规定元素的哪一侧不允许其他浮动元素。*/
+
+.bar
+{
+    fill: #366097;
+}
+
+.bar-label
+{
+    text-anchor: end;
+}
+/*text-anchor属性用于对齐*/
+/*end相当于右对齐*/
+.axis-label
+{
+    text-anchor:middle;
+    font-size: 13px;
+}

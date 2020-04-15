@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.sea
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: 0;
+}
+
+/*盛放地图的div的属性*/
+.map_div
+{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 25%;
+    /*padding: 0;*/
+    /*background-color: #F2BA14;*/
+    z-index: 3;
+}
+
+.land
+{
+    position:absolute;
+    height:100%;
+    bottom:0px;
+    left:-15%;
+    z-index: 2;
+}
+
+.icon_div
+{
+    z-index: 3;
+}
+.legend_div
+{
+    z-index: 3;
+}
+.title_div
+{
+    /*z-index: 3;*/
+    /*background-color: #F2BA14;*/
+}
+
+/*盛放地图的SVG的属性*/
+#map_svg
+{
+    shape-rendering:geometricPrecision;
+    text-rendering:geometricPrecision;
+    image-rendering:optimizeQuality;
+    fill-rule:evenodd;
+    clip-rule:evenodd;
+    /*border:1px solid #336633;*/
+    /*background-color: #37524B;*/
+}
+
+
+
+/*地图中对象的属性---开始---*/
+@charset "UTF-8";
+
+/*专题面*/
+.str0 {stroke:#DCDDDD;stroke-width:3.35406;stroke-linecap:round;stroke-linejoin:round}
+/*黄夹砂_x0020_*/
+.str1 {stroke:#DCDDDD;stroke-width:3.35406;stroke-linejoin:round}
+/*海岸线*/
+.str2 {stroke:#99A99C;stroke-width:5.03109;stroke-linejoin:round}
+/*海岸线*/
+.str3 {stroke:#99A99C;stroke-width:5.03109}
+/*次干*/
+.str4 {stroke:#D4D9D6;stroke-width:5.03109}
+/*主干*/
+.str5 {stroke:#B1B9B3;stroke-width:11.7392}
+/*主干*/
+.str6 {stroke:#B1B9B3;stroke-width:11.7359}
+/*_1472859776---江苏省遮罩的线条*/
+.str7 {stroke:#D3D3D4;stroke-width:6.70813}
+
+
+/*崇明面*/
+.fil0 {fill:#F2F2F2}
+/*滩涂*/
+.fil1 {fill:#DCDDDD}
+/*青紫泥*/
+.fil2 {fill:#9992A3}
+/*黄泥*/
+.fil3 {fill:#E8E2A0}
+/*并煞砂土*/
+.fil4 {fill:#9CCE39}
+/*旱作灰潮土*/
+.fil5 {fill:#ACC99E}
+/*园林灰潮土*/
+.fil6 {fill:#736B5E}
+/*黄泥盐土*/
+.fil7 {fill:#5B9606}
+/*夹砂盐土*/
+.fil8 {fill:#A57D37}
+/*黄泥盐化土*/
+.fil9 {fill:#EBC075}
+/*夹砂盐化土*/
+.fil10 {fill:#88BA88}
+/*砂质盐化土*/
+.fil11 {fill:#BFB56B}
+/*砂夹黄*/
+.fil12 {fill:#ABBD88}
+/*黄夹砂_x0020_*/
+.fil13 {fill:#809E80}
+/*海岸线/次干/主干*/
+.fil14 {fill:none}
+/*次干部分*/
+.fil15 {fill:#CBD4CD}
+/*江苏省遮罩*/
+.fil16 {fill:#FEFEFE;fill-opacity:0.749020}
+
+/*地图中对象的属性---结束---*/
+/*.fil5:hover*/
+/*{*/
+    /*fill:#FF0000;*/
+/*}*/

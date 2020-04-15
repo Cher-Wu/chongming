@@ -1,0 +1,245 @@
+/*@font-face
+{
+    font-family: calibri;
+    src: url('fonts/calibri.ttf');
+}*/
+
+.contents
+{
+    height:100%;
+    width: 1366px;
+    background-color: #EEEEEE;
+
+}
+
+#stripe
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:0px;
+    left:0px;
+}
+#shanghai
+ {
+     position:absolute;
+     height:80%;
+     bottom:0px;
+     left:0px;
+ }
+
+#atlas_name
+{
+    position:absolute;
+    height: 35%;
+    top:18%;
+    left:8%;
+    z-index: 1;
+}
+
+#div1
+{
+    position:absolute;
+    height:100%;
+    width: 100vh;
+    /*隐藏溢出该div的部分*/
+    overflow:hidden;
+    top: 0px;
+    right:0px;
+}
+
+#sector
+{
+    position: absolute;
+    width: 180vh;
+    height: 180vh;
+    top:-40vh;
+    left:0vh;
+    /*background-color: #F2BA14;*/
+}
+
+#shadow
+{
+    position: absolute;
+    height: 100%;
+    top:0px;
+    left:0px;
+    z-index:0;
+
+}
+
+/*6个章节的扇形组合图*/
+#sector_pics
+{
+    position: absolute;
+    height:90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 0;
+    transition: all 1000ms ease;
+    z-index:1;
+}
+
+
+
+.pie {
+    position: absolute;
+    margin-top: 8.5vh;
+    margin-left: 8.5vh;
+    padding: 0;
+    width: 161vh;
+    height: 161vh;
+    border-radius: 50%;
+    border:1vh solid #FFFFFF;
+    list-style: none;
+    overflow: hidden;
+    z-index: 2;
+}
+.slice {
+    /*overflow: hidden;*/
+    position: absolute;
+    /*border:1vh solid #FFFFFF;*/
+    margin:0;
+    padding:0;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+.slice-one {
+    transform: rotate(0deg) skewY(-30deg);
+    background:rgba(51,102,51,0.54);
+    cursor: pointer;
+}
+.slice-two {
+    transform: rotate(-60deg) skewY(-30deg);
+    background: rgba(0,51,0,0.75);
+}
+.slice-three {
+    transform: rotate(-120deg) skewY(-30deg);
+    background: rgba(51,102,51,0.54);
+}
+.slice-four {
+    transform: rotate(-180deg) skewY(-30deg);
+    background: rgba(0,51,0,0.75);
+    cursor: pointer ;
+}
+.slice-five {
+    transform: rotate(-240deg) skewY(-30deg);
+    background: rgba(51,102,51,0.54);
+}
+.slice-six {
+    transform: rotate(-300deg) skewY(-30deg);
+    background: rgba(0,51,0,0.75);
+}
+
+.line1
+{
+    position: absolute;
+    margin-top: 9vh;
+    margin-left: 89.5vh;
+    width: 1vh;
+    height: 162vh;
+    z-index: 3;
+}
+.line2
+{
+    position: absolute;
+    margin-top: 9vh;
+    margin-left: 89.5vh;
+    width: 1vh;
+    height: 162vh;
+    z-index: 4;
+    transform: rotate(60deg);
+-webkit-transform: rotate(60deg);
+-ms-transform: rotate(60deg);
+-moz-transform: rotate(60deg);
+}
+.line3
+{
+    position: absolute;
+    margin-top: 9vh;
+    margin-left: 89.5vh;
+    width: 1vh;
+    height: 162vh;
+    z-index: 5;
+    transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+}
+
+/*带有章节号的绿圆*/
+#gr_circle
+{
+    position: absolute;
+    width:32vh;
+    height:32vh;
+    margin-top: 73vh;
+    margin-left: 73vh;
+    border:1vh solid #FFFFFF;
+    background-color: #336633 ;
+    border-radius: 50%;
+    z-index: 6;
+    cursor: pointer; /*鼠标悬浮变成抓手形态*/
+}
+
+/*章节序号*/
+#chap_num
+{
+    position: absolute;
+    text-align: center ;
+    width: 32vh;
+    font-size: 18vh;
+    font-family: Calibri;
+    line-height:32vh;
+    margin-top: 0;
+    color: #FFFFFF;
+    /*background-color: #F2BA14;*/
+}
+
+/*章节标题和英文标题*/
+#chap_title
+{
+    position: absolute;
+    width:35vh;
+    height:10vh;
+    margin-top: 85vh;
+    margin-left: 22vh;
+    /*border:1vh solid #FFFFFF;*/
+    /*background-color: rgba(255,255,255,0.2);*/
+    /*border-radius: 50%;*/
+    z-index: 5;
+    color: #FFFFFF;
+}
+
+#title_chinese
+{
+    line-height: 6vh;
+    font-size: 4vh;
+    /*background-color: #37524B;*/
+    letter-spacing: 0.1em;
+    font-family: "Microsoft YaHei UI Light";
+    margin: 0 auto;
+}
+#title_english
+{
+    /*line-height: 4vh;*/
+    font-size: 2vh;
+    /*background-color: #37524B;*/
+    font-family: Calibri;
+    margin: 0 auto;
+}
+
+/*各章节超链接样式*/
+#my_href
+{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+a:hover
+{
+    text-shadow: 1vh 1vh 1vh #000000;
+    font-size: 6vh;
+}

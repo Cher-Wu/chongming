@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/content_style.css" type="text/css"/>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            soundfile1 = "../sound/水滴声.mp3";
+            soundfile2 = "../sound/喇叭.mp3";
+            soundfile3 = "../sound/海面嘀嗒.mp3";
+
+            let rotateVal = 0;
+            let chap_angle = 0;
+
+            $("#stripe").click(function () {
+                sound_play(soundfile3);
+
+            })
+            $("#shanghai").click(function () {
+                sound_play(soundfile2);
+
+            })
+
+
+            $("#gr_circle").click(function () {
+                rotateVal-=60;
+                sound_play(soundfile1);
+                $("#sector_pics ").css("transform",`rotate(${rotateVal}deg)`);
+                chap_angle_change(rotateVal);
+
+            })
+            $(".slice-one").click(function () {
+                rotateVal-=120;
+                sound_play(soundfile1);
+                $("#sector_pics ").css("transform",`rotate(${rotateVal}deg)`);
+                chap_angle_change(rotateVal);
+            })
+            $(".slice-two").mouseover(function () {
+                rotateVal-=60; //图片逆时针旋转60度
+                sound_play(soundfile1);
+                $("#sector_pics ").css("transform",`rotate(${rotateVal}deg)`);
+                chap_angle_change(rotateVal);
+            })
+            $(".slice-four").mouseover(function () {
+                rotateVal+=60;//图片顺时针旋转60度
+                sound_play(soundfile1);
+                $("#sector_pics ").css("transform",`rotate(${rotateVal}deg)`);
+                chap_angle_change(rotateVal);
+            })
+            $(".slice-five").click(function () {
+                rotateVal+=120;
+                sound_play(soundfile1);
+                $("#sector_pics ").css("transform",`rotate(${rotateVal}deg)`);
+                chap_angle_change(rotateVal);
+            })
+
+
+            //计算旋转角度余数
+            //0度01章，60度02章，120度03章...
+            function chap_angle_change(rotateVal){
+                chap_angle = rotateVal%360;
+                chap_angle = chap_angle+360;
+                chap_angle = chap_angle%360;
+                // console.log(chap_angle);
+
+                switch (chap_angle)
+                {
+                    case 0:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("01");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("战略背景");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Strategic Background");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    case 300:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("02");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("自然要素");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Physical Geographical Elements");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    case 240:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("03");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("综合地理");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Synthesize Geography");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    case 180:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("04");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("灾害风险");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Disaster Risk");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    case 120:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("05");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("社会经济");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Humanistic Socio-economic Foundation");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    case 60:
+                        $("#chap_num").hide();
+                        $("#chap_num").text("06");
+                        $("#chap_num").fadeIn("slow");
+                        $("#chap_title").hide();
+                        $("#my_href").text("未来愿景");
+                        $("#my_href").attr('href','../html/chapter1.html');
+                        $("#title_english").text("Future Vision");
+                        $("#chap_title").fadeIn("slow");
+                        break;
+                    default:
+                }
+
+            }
+
+            function sound_play(soundfile1){
+                document.getElementById("sound").innerHTML='<audio autoplay="autoplay"><source src="' + soundfile1 + '" type="audio/mpeg" /><embed hidden="true" autostart="true" loop="false" src="' + soundfile1 +'" /></audio>';
+            }
+        })
+    </script>
+
+
+</head>
+<body>
+<div class="contents ">
+    <img id="stripe" src="../001崇明网页素材/stripe.jpg" >
+    <img id="shanghai" src="../001崇明网页素材/shanghai.png" >
+    <img id="atlas_name" src="../001崇明网页素材/图集名.png" >
+    <div id="sound">
+    </div>
+    <div id="div1">
+        <div id="sector">
+            <img id="shadow" src="../001崇明网页素材/阴影.png" >
+            <img id="sector_pics" src="../001崇明网页素材/目录图片.png" >
+            <div id="gr_circle">
+                <p id="chap_num">01</p>
+
+            </div>
+            <ul class='pie'>
+                <li class='slice-one slice'> </li>
+                <li class='slice-two slice'> </li>
+                <li class='slice-three slice'> </li>
+                <li class='slice-four slice'> </li>
+                <li class='slice-five slice'> </li>
+                <li class='slice-six slice'> </li>
+            </ul>
+
+            <?xml version="1.0" standalone="no"?>
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+            "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+            <svg class="line1" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0.5vh" y1="0" x2="0.5vh" y2="162vh" style="stroke:rgb(255,255,255);stroke-width:1vh" />
+            </svg>
+            <svg class="line2">
+                <line x1="0.5vh" y1="0" x2="0.5vh" y2="162vh" style="stroke:rgb(255,255,255);stroke-width:1vh" />
+            </svg>
+            <svg class="line3">
+                <line x1="0.5vh" y1="0" x2="0.5vh" y2="162vh" style="stroke:rgb(255,255,255);stroke-width:1vh" />
+            </svg>
+
+            <!--章节中英标题的容器-->
+            <div id="chap_title">
+                <p id="title_chinese"><a id="my_href" href="../html/chapter1.html">战略背景</a></p>
+                <p id="title_english">Strategic Background</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+</body>
+</html>
